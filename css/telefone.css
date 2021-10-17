@@ -1,0 +1,525 @@
+@font-face {src: url(../fonts/BROADW.ttf);font-family: 'Brodway-Regular';font-weight: normal;} 
+@font-face {src: url(../fonts/segoeui.ttf);font-family: 'Segoe UI';font-weight: normal;} 
+@font-face {src: url(../fonts/LCALLIG.ttf);font-family: 'Lucida Calligraphy-italic';font-weight: italic;} 
+
+.started{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;
+	overflow:auto; 
+}
+
+.panel_metade{
+	flex: 50%;
+}
+
+.direita{
+	flex: 100%;
+	background-image: url("../img/wMkaMXTJjlQ.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.titulo{
+	font-size: 4.0em;
+	text-align: center;
+	color: white;
+	font-style: normal;
+	font-family: 'Brodway-Regular';
+}
+
+.links{
+	color: white;
+	text-align: center;
+	font-style: normal;
+	font-size: 2.0em;
+	text-decoration: underline;
+	font-family: 'Segoe UI';
+}
+
+.meio{
+	margin-top: 25%;
+}
+
+.final{
+	margin-top: 50%;
+	color: white;
+	font-style: normal;
+	font-size: 1.0em;
+	font-family: 'Segoe UI';
+	text-align: center;
+}
+
+.esquerda{
+	flex: 100%;
+	background-color: #6e0023;
+}
+
+.canto{
+	margin-left: 80%;
+	color: white;
+	font-size: 1.0em;
+	font-family: 'Lucida Calligraphy-italic';
+}
+
+.recomend{
+	margin-top: 8%;
+	margin-bottom: 2%;
+}
+
+.recomend p{
+	line-height: 0.8px;
+}
+
+.texto1{
+	color: white;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.0em;
+	font-family: 'Segoe UI';
+	text-align: center;	
+}
+
+.texto2{
+	color: white;
+	font-style: normal;
+	font-size: 1.2em;
+	font-family: 'Segoe UI';
+	text-align: center;
+}
+
+.filme{
+	text-align: center;
+}
+
+.random{
+	border: none;
+	font-size: 1.2em;
+	font-family: 'Segoe UI';
+	text-align: center;
+	background-color: orangered;
+	color: white;
+}
+
+.random:hover,
+.random:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.centro_cont{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 8%;
+}
+
+.esquerda_cont{
+	margin-right: 0.5%;
+	text-align: center;
+	color: white;
+}
+
+.direita_cont{
+	margin-left: 0.5%;
+	text-align: center;
+	color: white;
+}
+
+.panel_btn{
+	text-align: center;
+	margin-top: 15%;
+}
+
+.submenu{
+	display: flex;
+	flex-direction: row;
+	padding-top: 2%;
+}
+
+.home{
+	flex: 50%;
+	margin-left: 2%;
+	margin-top: 0.2%;
+}
+
+.busca{
+	flex: 50%;
+	margin-left: 50%;
+	margin-top: 1%;
+}
+
+.busca button{
+	border: none;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.busca img{
+	width: 54px;
+}
+
+.geral{
+	background-image: url("../img/myke-simon-atsUqIm3wxo-unsplash.png");
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+	bottom: 0%;	
+	overflow:auto;
+}
+
+.panel_f{
+	text-align: center;
+}
+
+.panel_filmes{
+	margin-top: 5%;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-bottom: 2%;
+}
+
+.panel_filmes a{
+  background-color: transparent;
+  text-decoration: none;
+  color: transparent;
+}
+
+.panel_filmes img{
+	margin-top: 0.2%;
+}
+
+.panel_extend{
+	text-align: center;
+}
+
+.btn{
+	margin-top: 3%;
+	font-size: 3.0em;
+	color: black;
+	font-family: 'Segoe UI';
+	border: none;
+	width: 15%;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.botao{
+	color: transparent;
+	font-family: 'Segoe UI';
+	border: none;
+	background-color: transparent;
+	padding: 2px;	
+}
+
+.hide{
+	display: none;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid #888;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.janela{
+	margin-top: 15%;
+	padding-bottom: 10%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  position: fixed;
+  right: 1%;
+  font-size: 3.0em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.panel_busca{
+	margin-top: 4%;
+	text-align: center;
+}
+
+.panel_busca input{
+	font-size: 1.0em;
+}
+
+.panel_busca button{
+	font-size: 1.0em;
+}
+
+.pn_bsc_btn{
+	text-align: center;
+	margin: 1%;
+	display: flex;
+	flex-direction: column;
+}
+
+.pn_bsc_btn button{
+	border: none;
+	background-color: lightgray;
+	width: 100%;
+	padding: 0.5%;
+	font-size: 1.2em;
+	margin-top: 0.5%;
+}
+
+.link_p{
+	margin-top: 2%;
+	text-align: center;
+}
+
+.link_p a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Segoe UI';
+	font-size: 1.2em;
+}
+
+.window{
+	display: flex;
+	margin-left: 15%;
+	margin-right: 10%;
+	padding-bottom: 8%;
+	justify-content: center;
+}
+
+.titulo_player{
+	color: white;
+	flex: 100%;
+	text-align: center;
+	background-color: black;
+}
+
+.centro{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.btn_temp{
+	border: none;
+	width: 200px;
+	text-align: center;
+	padding: 5px;
+	font-size: 18px;
+	background-color: transparent;
+	color: white;
+}
+
+.centro_painel{
+	flex: 100%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn_series{
+	border: none;
+	background-color: white;
+	padding: 2px;
+	width: 50%;
+	margin: 2px;
+}
+
+.titulo_resultado{
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+	font-size: 1.2em;
+	font-family: 'Segoe UI';
+}
+
+.panel_resultado{
+	text-align: center;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.global{
+	padding-bottom: 5%;
+}
+
+.panel_resultado a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.2em;
+	font-family: 'Segoe UI';
+}
+
+.panel_f_ep{
+	text-align: center;
+	padding-bottom: 12%;
+}
+
+.panel_ep{
+	margin-top: 2%;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-bottom: 1%;
+}
+
+.panel_ep img{
+	margin-top: 0.2%;
+}
+
+.legenda{
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 0px;
+}
+
+.legenda img{
+	width: 16px;
+}
+
+.panel_idade_filme{
+	display: flex;
+	margin-top: -100px;
+}
+
+.panel_idade_filme p{
+	color: black;
+	font-size: 14px;
+	background-color: white;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+
+.janela1_carousel{
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.info{
+	display: flex;
+	justify-content: center;
+	color: white;
+	margin-top: 5px;
+}
+
+.p_img{
+	position: fixed;
+	top: 2px;
+}
+
+.legend_Colect{
+	width: 16px;
+}
+
+.panel_idade{
+	background-color: white;
+	text-align: center;
+	position: fixed;
+	top: 70px;
+}
+
+.panel_idade p{
+	color: black;
+	font-size: 14px;
+	background-color: white;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+
+.p_btn{
+	background-color: white;
+	text-align: center;
+	width: 72px;
+}
+
+.btn_colecao{
+	border: none;
+	background-color: transparent;
+}
+
+.btn_colecao img{
+	width: 32px;
+}
+
+.titulo_Clc{
+	text-align: center;
+}
+
+.titulo_Clc h1{
+	color: white;
+}
+
+.panel_random{
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-right: 75%;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.panel_info{
+	color: white;
+	flex: 100%;
+	text-align: center;
+}
+
+.panel_banner{
+  text-align: center;
+}
+
+.voltar{
+	text-align: center;
+}
+
+.footer{
+  text-align: center;
+  background-color: transparent;
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+.footer p{
+	color: white;
+	font-size: 1.0em;
+	font-family: 'Segoe UI';
+}
